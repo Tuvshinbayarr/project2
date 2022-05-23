@@ -57,7 +57,7 @@ body{
 	background-position: center center;
 	background-size: cover;
 	background-color: var(--secondaryColor);
-	min-height: 100vh;
+	min-height: 200vh;
 
     display: -ms-grid;
     display: grid;
