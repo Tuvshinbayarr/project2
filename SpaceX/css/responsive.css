@@ -1,0 +1,133 @@
+/* Default Layout	*/
+
+
+/*	Extra small devices (portrait phones, less than 576px)	*/
+@media (max-width: 575.98px) {
+	
+	.navbar {
+		padding: 10px 15px;
+	}
+	.navbar .navbar-brand span{
+		font-size: 32px;
+	}
+	.navbar .navbar-nav{
+		background: var(--secondaryColor);
+		border: 1px solid #030a20;
+	}
+	.navbar .navbar-nav .nav-item {
+		margin: 0px auto;
+		width: 275px;
+		border-bottom: 1px solid #030a20;
+	}
+	.navbar .navbar-nav .nav-item:last-child {
+		margin-right: auto;
+		border-bottom: none;
+	}
+	.navbar .navbar-nav .nav-item.active .nav-link::after {
+		display: none;
+	}
+
+	/* ============================== */
+
+	.middle_content h1{
+		font-size: 48px;
+	}
+	.middle_content p{
+		font-size: 15px;
+	}
+
+	/* ============================== */
+
+	.bottom_info {
+		-ms-grid-columns: auto;
+		grid-template-columns: auto;
+		gap: 20px;
+	}
+	.bottom_info .left_details{
+		height: inherit;
+	}
+	.bottom_info .latest_project {
+		position: static;
+		width: 100%;
+		padding: 15px;
+		padding-bottom: 10px;
+	}
+	.bottom_info .latest_project .title_time .title h3{
+		font-size: 18px;
+	}
+	.bottom_info .latest_project p{
+		font-size: 14px;
+	}
+	.bottom_info .latest_project .title_time .the_time time{
+		font-size: 12px;
+	}
+
+	
+}
+
+/*	Small devices (landscape phones, 576px and up)	*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+	.navbar {
+		padding: 10px 15px;
+	}
+	.navbar .navbar-nav{
+		background: var(--secondaryColor);
+		border: 1px solid #030a20;
+	}
+	.navbar .navbar-nav .nav-item {
+		margin: 0px auto;
+		width: 275px;
+		border-bottom: 1px solid #030a20;
+	}
+	.navbar .navbar-nav .nav-item:last-child {
+		margin-right: auto;
+		border-bottom: none;
+	}
+	.navbar .navbar-nav .nav-item.active .nav-link::after {
+		display: none;
+	}
+
+	/* ============================== */
+
+	.bottom_info {
+		-ms-grid-columns: auto;
+		grid-template-columns: auto;
+		gap: 20px;
+	}
+	.bottom_info .left_details{
+		height: inherit;
+	}
+	.bottom_info .latest_project {
+		position: static;
+		width: 100%;
+	}
+
+
+
+}
+
+/*	Medium devices (tablets, 768px and up)	*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+	
+	.navbar{
+		padding: 10px 15px;
+	}
+	.navbar .navbar-nav{
+		background: var(--secondaryColor);
+		border: 1px solid #030a20;
+	}
+	.navbar .navbar-nav .nav-item {
+		margin: 0px auto;
+		width: 275px;
+		border-bottom: 1px solid #030a20;
+	}
+	.navbar .navbar-nav .nav-item:last-child {
+		margin-right: auto;
+		border-bottom: none;
+	}
+	.navbar .navbar-nav .nav-item.active .nav-link::after {
+		display: none;
+	}
+	
+}

@@ -1,0 +1,332 @@
+
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	background:#FFFFFF;
+}
+:root{
+	--baseColor: #E55936;
+	--secondaryColor: #081546;
+	--lightColor: #FFFFFF;
+	--grayColor: #F7F7F7;
+	--darkColor: #232323;
+
+	--baseFont: 'Poppins', sans-serif;
+}
+
+.info_link{
+	margin-top: 10px;
+}
+.info_link a{
+	text-decoration: none;
+	color: var(--lightColor);
+	font-family: var(--baseFont);
+	font-weight: 400;
+	font-size: 36px;
+	line-height: 1;
+	position: relative;
+	right: 0px;
+	display: inline-block;
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: all 0.2s ease-in;
+	-moz-transition: all 0.2s ease-in;
+	transition: all 0.2s ease-in;
+}
+.info_link a:hover{
+	color: var(--baseColor);
+	right: -15px;
+	-webkit-transform: scale(1.25);
+	-ms-transform: scale(1.25);
+	transform: scale(1.25);
+}
+/* ========== Custom CSS Starts ========== */
+
+
+/* ============================== */
+/* ============================== */
+/* ============================== */
+
+
+/* ===== CSS For "Page Common" Starts Here ===== */
+.page_main_wrap{
+	background: url('images/Background.gif') no-repeat;
+	background-position: center center;
+	background-size: cover;
+	background-color: var(--secondaryColor);
+	min-height: 100vh;
+
+    display: -ms-grid;
+    display: grid;
+    -ms-flex-line-pack: justify;
+    align-content: space-between;
+}
+
+.page_main_wrap1{
+	background: url(https://acegif.com/wp-content/gif/outerspace-6.gif) no-repeat;
+	background-position: center center;
+	background-size: cover;
+	background-color: var(--secondaryColor);
+	min-height: 100vh;
+
+    display: -ms-grid;
+    display: grid;
+    -ms-flex-line-pack: justify;
+    align-content: space-between;
+}
+
+.page_main_wrap2{
+	background: url(https://thumbs.gfycat.com/MeekGloomyAmericancrayfish-size_restricted.gif?fbclid=IwAR0jTerrlBS0WCj0NvZ8I_-T7EQKeSXbRdlkFxLo3ysFvhaoaaT15x7BHoE) no-repeat;
+	background-position: center center;
+	background-size: cover;
+	background-color: var(--secondaryColor);
+	min-height: 100vh;
+
+    display: -ms-grid;
+    display: grid;
+    -ms-flex-line-pack: justify;
+    align-content: space-between;
+}
+
+/* ===== CSS For "Page Common" Ends Here ===== */
+
+
+/* ============================== */
+/* ============================== */
+/* ============================== */
+
+/* ===== CSS For "Navbar" Starts Here ===== */
+.navbar-toggler{
+	padding:0px;
+}
+.navbar-toggler:focus{
+	outline: none;
+}
+
+/* ===== Humberger Menu Icon ===== */
+.humbergur_icon{
+	width: 30px;
+	height: 20px;
+	position: relative;
+	margin: 0px;
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	transform: rotate(0deg);
+	-webkit-transition: .5s ease-in-out;
+	-moz-transition: .5s ease-in-out;
+	-o-transition: .5s ease-in-out;
+	transition: .5s ease-in-out;
+	cursor: pointer;
+}
+.humbergur_icon span{
+	display: block;
+	position: absolute;
+	height: 3px;
+	width: 100%;
+	border-radius: 9px;
+	opacity: 1;
+	left: 0;
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	transform: rotate(0deg);
+	-webkit-transition: .25s ease-in-out;
+	-moz-transition: .25s ease-in-out;
+	-o-transition: .25s ease-in-out;
+	transition: .25s ease-in-out;
+}
+.humbergur_icon span {
+	background: var(--baseColor);
+}
+.humbergur_icon span:nth-child(1) {
+	top: 0px;
+}
+.humbergur_icon span:nth-child(2),
+.humbergur_icon span:nth-child(3) {
+	top: 10px;
+}
+.humbergur_icon span:nth-child(4) {
+	top: 20px;
+}
+.humbergur_icon.open span:nth-child(1) {
+	top: 11px;
+	width: 0%;
+	left: 50%;
+}
+.humbergur_icon.open span:nth-child(2) {
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+.humbergur_icon.open span:nth-child(3) {
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+.humbergur_icon.open span:nth-child(4) {
+	top: 11px;
+	width: 0%;
+	left: 50%;
+}
+/* ===== Humberger Menu Icon ===== */
+
+.navbar{
+	padding: 10px 10px;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+.navbar .navbar-brand{
+	text-decoration: none;
+}
+.navbar .navbar-brand span{
+	color: var(--lightColor);
+	font-family: var(--baseFont);
+	font-weight: 700;
+	font-size: 36px;
+	display: inline-block;
+}
+.navbar .navbar-nav .nav-item {
+	margin-right: 10px;
+}
+.navbar .navbar-nav .nav-item:last-child{
+	margin-right: 0px;
+}
+.navbar .navbar-nav .nav-item .nav-link{
+	color: var(--lightColor);
+	font-family: var(--baseFont);
+	font-weight: 500;
+	font-size: 16px;
+	padding: 10px 15px;
+	text-decoration: none;
+	text-transform: uppercase;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+.navbar .navbar-nav .nav-item .nav-link:hover{
+	color: var(--baseColor);
+}
+.navbar .navbar-nav .nav-item.active .nav-link{
+	color: var(--baseColor);
+	position: relative;
+}
+.navbar .navbar-nav .nav-item.active .nav-link:after {
+	content: "";
+	background: var(--baseColor);
+	width: 60px;
+	height: 2px;
+	border-radius: 2px;
+	position: absolute;
+	left: 50%;
+	bottom: 2px;
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+/* ===== CSS For "Navbar" Ends Here ===== */
+
+
+/* ============================== */
+/* ============================== */
+/* ============================== */
+
+
+/* ===== CSS For "Middle Info" Starts Here ===== */
+.middle_content{
+	max-width: 480px;
+	margin: 25px 0px;
+}
+.middle_content h1{
+	color: #C0CAE2;
+	font-family: var(--baseFont);
+	font-weight: 700;
+	font-size: 56px;
+	margin-bottom: 15px;
+}
+.middle_content p{
+	color: var(--lightColor);
+	font-family: var(--baseFont);
+	font-weight: 400;
+	font-size: 16px;
+	margin-bottom: 0px;
+}
+
+/* ===== CSS For "Bottom Info" Starts Here ===== */
+.bottom_info_wrap{
+	position: relative;
+}
+.bottom_info{
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 15px 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+    gap: 15px;	
+}
+.bottom_info .left_details{
+	height: 150px;
+	display: -ms-grid;
+	display: grid;
+	-ms-flex-line-pack: center;
+	align-content: center;
+}
+.bottom_info .latest_project{
+	background: var(--baseColor);
+	padding: 20px;
+	padding-bottom: 15px;
+	width: 450px;
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+}
+.bottom_info .latest_project .title_time{
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr 10px 1fr;
+    grid-template-columns: 2fr 1fr;
+    grid-auto-rows: auto;
+    gap: 10px;
+	margin-bottom: 10px;
+}
+.bottom_info .latest_project .title_time .title h3{
+	color: var(--lightColor);
+	font-family: var(--baseFont);
+	font-weight: 600;
+	font-size: 20px;
+	margin-bottom: 0px;
+}
+.bottom_info .latest_project .title_time .the_time{
+	text-align: right;
+}
+.bottom_info .latest_project .title_time .the_time time{
+	color: var(--lightColor);
+	font-family: var(--baseFont);
+	font-weight: 400;
+	font-size: 14px;
+	display: inline-block;
+}
+.bottom_info .latest_project p{
+	color: var(--lightColor);
+	font-family: var(--baseFont);
+	font-weight: 400;
+	font-size: 15px;
+	margin-bottom: 0px;
+}
+.bottom_info .latest_project .info_link a:hover{
+	color: var(--secondaryColor);
+}
+
+
+/* ===== CSS For "Bottom Info" Ends Here ===== */
+
+
+/* ============================== */
+/* ============================== */
+/* ============================== */

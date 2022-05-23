@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&display=swap');
+@import './variables.css';
+@import './utilities.css';
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--primary);
+    background: var(--primary); 
+}
+
+#body.about .body {
+	background-color: #620031;
+	margin: 0;
+	min-height: 253px;
+	overflow: hidden;
+	padding: 0;
+	width: 100%;
+}
+#body.about .body div {
+	margin: 0 auto;
+	max-width: 940px;
+	overflow: hidden;
+	padding: 36px 10px 35px;
+}
+#body.about .body div h2 {
+	color: #A3A3A3;
+	float: left;
+	font-family: audiowide-regular-webfont;
+	font-size: 23px;
+	font-weight: normal;
+	line-height: 23px;
+	margin: 18px 0 26px;
+	padding: 0;
+	text-align: left;
+	text-transform: uppercase;
+	width: 620px;
+}
+#body.about .body div p {
+	color: #ffffff;
+	display: block;
+	float: left;
+	font-family: Arial;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 24px;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	width: 620px;
+}
+#body.about .body div p a {
+	color: #ffffff;
+	font-family: Arial;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 24px;
+	margin: 0;
+	padding: 0;
+	text-decoration: underline;
+}
+#body.about .body div p a:hover {
+	color: #a3a3a3;
+}
+#body.about .body div img {
+	display: block;
+	float: right;
+	margin: 0;
+	padding: 0;
+	width: auto;
+}
+
+
+.hero .cta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: calc(100vh - 80px);
+}
+
+.hero .cta h1 {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.hero .cta > div {
+    flex: 1;
+}
+
+.hero .cta .left-section {
+    padding: 0 60px 0 30px;
+}
+
+.hero .cta .right-section img {
+    height: 70vh;
+    transform: rotate(20deg);
+    animation: moveInSpace 12s ease-in-out infinite alternate;
+}
+
+@keyframes moveInSpace {
+    50% {
+       transform: translateY(100px) rotate(-30deg) scale(0.8); 
+    }
+}
+
+section.strip {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: var(--dark);
+    padding: 50px 0;
+}
+
+section.rocket {
+    display: grid;
+    grid-template-columns: 1fr 100px 1fr;
+    grid-gap: 80px;
+    padding: 100px 0;
+}
+
+section.rocket .rocket-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section.rocket .rocket-body span {
+    font-size: 0;
+    position: relative;
+}
+
+section.rocket .rocket-body span img {
+    width: 100%;
+}
+
+section.rocket .block {
+    width: 70%;
+}
+
+section.rocket .block h1 {
+    font-size: 32px;
+    font-weight: 400;
+}
+
+section.rocket .block .with-underline {
+    position: relative;
+    margin-bottom: 38px;
+}
+
+section.rocket .block .with-underline:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    display: block;
+    width: 38%;
+    height: 2px;
+    background: var(--primary);
+}
+
+section.rocket .block h1.with-underline:before {
+    width: 20%;
+}
+
+section.rocket p {
+    line-height: 1.6;
+}
+
+section.rocket .block h2 {
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+section.rocket .block.payload {
+    padding-top: 130px;
+}
+
+section.rocket .block.payload h2 {
+    padding-left: 80px;
+}
+
+section.rocket .block.dragon {
+    padding-top: 120px;
+}
+
+section.rocket .block button {
+    margin-top: 30px;
+}
+
+section.rocket .block.composite {
+    padding-top: 60px;
+}
+
+section.rocket .block.first-stage {
+    padding-top: 60px;
+}
+
+section.rocket .block.capacity {
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+}
+
+section.rocket .block.capacity > div:first-child {
+    margin-right: 40px;
+}
+
+section.rocket .block.capacity h4 {
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+section.rocket .block.capacity h6 {
+    font-size: 40px;
+    font-weight: 400;
+}
+
+section.rocket .block.capacity h6 small {
+    font-size: 12px;
+}
+
+section.rocket .block.second-stage {
+    padding-top: 60px;
+}
+
+section.rocket .right-block .block.capacity {
+    padding-top: 120px;
+}
+
+section.rocket .right-block .block.capacity.single {
+    padding-top: 40px;
+}
+
+section.rocket .right-block .block.engines {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+section.rocket .right-block .block.engines img {
+    width: 180px;
+}
+
+section.rocket .right-block .block.marine {
+    padding-top: 100px;
+    wodth: 70%;
+}
+
+section.rocket .right-block .block.marine h2 {
+    font-size: 14px;
+    padding-left: 100px;
+    margin-bottom: 26px;
+}
+
+section.rocket .right-block .floating-graphics {
+    position: sticky;
+    float: right;
+    top: 60px;
+    margin-right: -80px;
+}
+
+section.rocket .right-block .floating-graphics img {
+    height: 350px;
+}
+
+section.rocket .rocket-body span:after, section.rocket .rocket-body span:nth-child(3):before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: var(--primary);
+    transition: width 1s ease-in-out;
+}
+
+section.rocket .rocket-body span:nth-child(1):after {
+    bottom: 16px;
+    left: 96%;
+}
+
+section.rocket .rocket-body span:nth-child(2):after {
+    bottom: 62%;
+    right: 100%;
+}
+
+section.rocket .rocket-body span:nth-child(3):after {
+    bottom: 64%;
+    right: 90%;
+}
+
+section.rocket .rocket-body span:nth-child(3):before {
+    bottom: 36%;
+    left: 90%;
+}
+
+section.rocket .rocket-body span.active:nth-child(1):after {
+    width: 120px;
+}
+
+section.rocket .rocket-body span.active:nth-child(2):after {
+    width: 180px;
+}
+
+section.rocket .rocket-body span.active:nth-child(3):after {
+    width: 200px;
+}
+
+section.rocket .rocket-body span.active:nth-child(3):before {
+    width: 160px;
+}
+
+@keyframes jump {
+    50% {
+        transform: translateY(-50px);
+    }
+}
+
+section.rocket .rocket-body span.active:nth-child(1) {
+    animation: jump 1s ease-in-out forwards;
+}
+
